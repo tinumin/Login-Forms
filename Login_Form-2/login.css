@@ -1,0 +1,92 @@
+
+* {
+    display: block;
+    box-sizing: border-box; 
+}
+html {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100vh;
+}
+head {
+    display: none;
+}
+body {
+    margin: auto;
+    background: linear-gradient(to bottom,rgba(255, 255, 255, 0.959) 5%, transparent),
+    url("flower-bg.jpg");
+    background-size: cover;
+    background-position: bottom 26% left;
+    width: 100%;
+    height: 100vh;
+}
+.login__box {
+    position: absolute;
+    top: 50%;
+    left: 50%;transform: translate(-50%, -50%);
+    box-shadow: 3px 3px 13px 1px rgba(19, 19, 19, 0.452);
+    background: white;
+    /* border: 2px red solid; */
+}
+.login__box:hover,
+.login__box:active {
+    box-shadow: 5px 5px 15px 1px rgba(8, 8, 8, 0.507);
+}
+.login__box h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.1rem;
+    margin-top: 4rem;
+    color: rgb(47, 47, 47);
+}
+.login_area {
+    padding: 0.1rem 1rem  0.1rem  1rem;
+}
+.field {
+    padding: 1rem 0.5rem;
+    margin: 2rem;
+    width: 332px;
+    outline: none;
+}
+.field:first-of-type {
+    margin-top: 1rem;
+}
+.button {
+    width: 332px;
+    height: 50px;
+    font-size: 1rem;
+    background: #FB6155;
+    color: blanchedalmond;
+    border: 0px;
+    border-radius: 5px;
+    margin: 2rem 2rem 1rem 2rem;
+    padding: 0px;
+    cursor: pointer;
+}
+button:hover {
+    background: #ff4d40;
+}
+.choice {
+    margin-bottom: 5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 0.9rem;
+}
+.choice a {
+    display: inline-block;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #FB6155;
+}
+.choice a:hover {
+    color: #be259d;
+}
+.choice p {
+    display: inline-block;
+    margin : 0.2rem;
+}
+#create_new_ac {
+    display: block;
+}
