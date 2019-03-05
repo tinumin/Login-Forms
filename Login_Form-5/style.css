@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: url("bg_img.jpg") no-repeat;
+    background-position: 100% 100%;
+    background-size: cover;
+    font-family: sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+form {
+    margin-top: 32px;
+}
+
+.login__box {
+    width: 320px;
+    height: 400px;
+    background: rgb(31, 31, 31);
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 70px 30px;
+    overflow: hidden;
+}
+
+.login__box:hover {
+    background-color: rgb(20, 20, 20);
+}
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+    
+}
+.login__box input{
+    width: 100%;
+    margin-bottom: 30px;
+    
+}
+.login__box input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.login__box input::placeholder {
+    color:white;
+    opacity: 0.7;
+  }
+.login__box input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #39dc79;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 8px;
+}
+.login__box input[type="submit"]:hover
+{
+    cursor: pointer;
+    border: 2px #39dc79 solid;
+    background: transparent;
+    color: white;
+    -webkit-transition: background-color 500ms ease-out;
+    -ms-transition: background-color 500ms ease-out;
+    transition: background-color 500ms ease-out;
+}
+.forget__pwd {
+    text-align: center;
+}
+.login__box .submit {
+    margin-bottom: 10px;
+}
+.login__box a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #cecece;
+    text-align: center;
+}
+.login__box a:hover
+{
+    color: #39dc79
+}
+.login__box-glare {
+    width: 320px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.100);
+    top: calc(50% - 400px);
+    left: calc(50% - 320px);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    transform: rotateZ(45deg);
+    transform-origin: center
+
+}
+
+@keyframes bounce {
+    0% {
+	opacity : 0;
+    -webkit-transform: translate3d(0, 0, 0); 
+    transform: translate3d(-50%, -25%, 0);
+    }
+    100% {
+	opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0); 
+        transform: translate3d(-50%, -50%, 0);
+        }
+}
